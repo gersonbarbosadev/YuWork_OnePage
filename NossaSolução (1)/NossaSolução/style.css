@@ -66,12 +66,28 @@ h4 {
     align-items: center;
 }
 
-#help {
+/* #help {
     background: url(images/money.png);
     background-size: cover;
     padding-bottom: 10%;
     background-position: center;
     height: 100vh;
+} */
+
+#help {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#help-mobile {
+    display: none;
+}
+
+#display-pix {
+    display: flex;
+    justify-content: center;
 }
 
 .help-work {
@@ -184,6 +200,10 @@ h4 {
     margin-left: 1132px;
 }
 
+#mobile-pix {
+    display: none;
+}
+
 .debito-trimestre {
     width: 90px;
     text-align: center;
@@ -238,6 +258,10 @@ h4 {
 #possibilidade-two {
     margin-top: 80px;
     width: 550px;
+}
+
+#evolution-mobile {
+    display: none;
 }
 
 .possibilities p {
@@ -372,7 +396,7 @@ h4 {
 .farm-buy {
     background-color: rgb(52 189 173);
     height: 33vh;
-
+    display: none;
 }
 
 .farm-cenary p,
@@ -412,6 +436,11 @@ h4 {
     background-size: cover;
     height: 33vh;
     background-position: center;
+    display: none;
+}
+
+#farm-desktop {
+    width: 100%;
 }
 
 img.seta-direita {
@@ -444,7 +473,11 @@ img.seta-esquerda {
 .banking-buy {
     background-color: rgb(52 189 173);
     height: 33vh;
+    display: none;
+}
 
+#banking-desktop {
+    width: 100%;
 }
 
 #banking-img {
@@ -498,6 +531,7 @@ img.seta-esquerda {
     background-size: cover;
     height: 33vh;
     background-position: center;
+    display: none;
 }
 
 #payments-container {
@@ -568,15 +602,19 @@ img.seta-esquerda {
     font-size: 50px;
 }
 
-#calendar-open-banking {
+#calendar-mobile {
+    display: none;
+}
+
+/* #calendar-open-banking {
     background: url(./images/Calendario.png);
     background-size: cover;
     background-position: center;
-}
+} */
 
 .tittle-calendar {
     text-align: center;
-    width: 1000px;
+    width: 50%;
     position: absolute;
     margin-left: 220px;
 }
@@ -584,7 +622,7 @@ img.seta-esquerda {
 .calendar-number {
     border: 5px solid;
     height: 75px;
-    width: 75px;
+    width: 70%;
     text-align: center;
     border-radius: 100%;
     font-size: 30px;
@@ -620,13 +658,17 @@ img.seta-esquerda {
     margin-top: 40px;
     margin-left: -40px;
     line-height: 20px;
+    width: 50%;
 }
 
-.background-team {
+#team-mobile {
+    display: none;
+}
+
+/* .background-team {
     background: linear-gradient(0deg, #34bdad 60%, #ffffff 40%);
-}
-
-.yuwork-equip {
+} */
+/* .yuwork-equip {
     height: 245px;
     position: absolute;
     margin-top: -246px;
@@ -674,7 +716,9 @@ img.seta-esquerda {
 
 #walter-pina {
     margin-left: 500px;
-}
+} */
+
+
 
 #desenvolvedores {
     margin-left: 800px;
@@ -698,6 +742,50 @@ img.seta-esquerda {
     }
 
     #spi-text {
+        width: 100%;
+    }
+
+    #calendar-desktop {
+        display: none;
+    }
+
+    #calendar-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .background-team {
+        display: none;
+    }
+
+    #team-desktop {
+        display: none;
+    }
+
+    #section-desktop {
+        display: none;
+    }
+
+    #team-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    #evolution-desktop {
+        display: none;
+    }
+
+    #evolution-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    #help-desktop {
+        display: none;
+    }
+
+    #help-mobile {
+        display: block;
         width: 100%;
     }
 
@@ -731,6 +819,14 @@ img.seta-esquerda {
         padding: 30px;
     }
 
+    #desktop-pix {
+        display: none;
+    }
+
+    #mobile-pix {
+        display: block;
+        width: 100%;
+    }
 
     #lista-de-pontos-positivos li img {
         height: auto;
@@ -877,6 +973,11 @@ img.seta-esquerda {
     .farm-cenary,
     .farm-buy {
         width: 100%;
+        display: block;
+    }
+
+    #farm-desktop {
+        display: none;
     }
 
     .farm-drog {
@@ -916,6 +1017,7 @@ img.seta-esquerda {
 
     #col-farm-drog {
         width: 100%;
+        display: block;
     }
 
     .farm-buy img {
@@ -929,10 +1031,16 @@ img.seta-esquerda {
     .banking-cenary,
     .banking-buy {
         width: 100%;
+        display: block;
     }
 
     #open-banking-container {
         width: 100%;
+        display: block;
+    }
+
+    #baking-desktop {
+        display: none;
     }
 
     #text-banking {
@@ -1119,7 +1227,7 @@ img.seta-esquerda {
     #obrigadx-info {
         background: url(./images/obrigadx.jpg);
         background-size: cover;
-        background-position: -245px;
+        background-position: 27%;
     }
 }
 
@@ -1133,8 +1241,61 @@ img.seta-esquerda {
         margin-left: 88px;
     }
 
+    #calendar-desktop {
+        display: none;
+    }
+
+    #calendar-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    #evolution-desktop {
+        display: none;
+    }
+
+    #team-desktop {
+        display: none;
+    }
+
+    .background-team {
+        display: none;
+    }
+
+    #section-desktop {
+        display: none;
+    }
+
+    #team-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    #evolution-mobile {
+        display: block;
+        width: 100%;
+    }
+
     .pix-img {
         display: none;
+    }
+
+    #desktop-pix {
+        display: none;
+    }
+
+    #mobile-pix {
+        display: block;
+        width: 100%;
+    }
+
+    #help-desktop {
+        display: none;
+    }
+
+    #help-mobile {
+        display: block;
+        width: 100%;
     }
 
     #img-pontos {
@@ -1290,6 +1451,10 @@ img.seta-esquerda {
         display: inline;
     }
 
+    .farm-cenary, .farm-buy {
+        display: block;
+    }
+
     .farm-cenary img {
         position: relative;
         filter: invert(1);
@@ -1323,6 +1488,11 @@ img.seta-esquerda {
 
     #col-farm-drog {
         width: 100%;
+        display: block;
+    }
+
+    #farm-desktop {
+        display: none;
     }
 
     .farm-buy img {
@@ -1339,6 +1509,18 @@ img.seta-esquerda {
 
     div#text-baking {
         display: grid !important;
+    }
+
+    .banking-cenary, .banking-buy {
+        display: block;
+    }
+
+    #open-banking-container {
+        display: block;
+    }
+
+    #banking-desktop {
+        display: none;
     }
 
     .banking-cenary img {
@@ -1436,22 +1618,29 @@ img.seta-esquerda {
         line-height: 17px;
         height: 56px;
         font-size: 18px;
+        width: 100%;
     }
 
     #calendar-text-list {
         margin-top: 0;
-        margin-left: 45px;
+        margin-left: 0;
     }
 
     #calendar-number-list {
         margin-top: 0;
         margin-left: 0;
+        width: 20%;
+    }
+
+    .calendar-number {
+        width: 100%;
     }
 
     .tittle-calendar {
         text-align: center;
         position: relative;
         margin-left: 0;
+        width: 100%;
     }
 
     .tittle-calendar h1 {
@@ -1461,10 +1650,6 @@ img.seta-esquerda {
     #calendar-open-banking {
         background: none;
         display: inline;
-    }
-
-    .background-team {
-        background: linear-gradient(0deg, #34bdad 90%, #ffffff 10%);
     }
 
     .yuwork-equip {
@@ -1506,11 +1691,27 @@ img.seta-esquerda {
     #obrigadx-info {
         background: url(./images/obrigadx.jpg);
         background-size: cover;
-        background-position: -245px;
+        background-position: 27%;
     }
 }
 
 @media screen and (min-width: 821px) and (max-width: 1280px) {
+
+    #help-mobile {
+        display: none;
+    }
+
+    #calendar-mobile {
+        display: none;
+    }
+
+    #team-mobile {
+        display: none;
+    }
+
+    #evolution-mobile {
+        display: none;
+    }
 
     .pix-img {
         height: 316px;
@@ -1735,6 +1936,10 @@ img.seta-esquerda {
         margin-top: 20px;
     }
 
+    #banking-desktop {
+        width: 100%;
+    }
+
     .banking-cenary h4 {
         display: block;
         text-align: center;
@@ -1761,6 +1966,10 @@ img.seta-esquerda {
 
     #payments-container {
         padding: 0;
+    }
+
+    #mobile-pix {
+        display: none;
     }
 
     .text-payments {
